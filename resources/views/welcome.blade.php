@@ -23,9 +23,9 @@
                     Sociedades
                 </button>
                 <ul class="dropdown-menu dropdown-menu-primary">
-                  <li><a class="dropdown-item" href="SocJovenes">Jovenes</a></li>
-                  <li><a class="dropdown-item" href="SocSenioras">Señoras</a></li>
-                  <li><a class="dropdown-item" href="socSeniores">Señores</a></li>
+                  <li><a class="dropdown-item" href="/socJovenes">Jovenes</a></li>
+                  <li><a class="dropdown-item" href="/SocSenioras">Señoras</a></li>
+                  <li><a class="dropdown-item" href="/socSeniores">Señores</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -33,7 +33,7 @@
                     Privilegios
                 </button>
                 <ul class="dropdown-menu dropdown-menu-primary">
-                  <li><a class="dropdown-item" href="SocJovenes">Jovenes</a></li>
+                  <li><a class="dropdown-item" href="">Jovenes</a></li>
                   <li><a class="dropdown-item" href="SocSenioras">Señoras</a></li>
                   <li><a class="dropdown-item" href="socSeniores">Señores</a></li>
                 </ul>
@@ -67,6 +67,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.0/dist/sweetalert2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="{{asset('js/SocJovenes.js')}}"></script>
 </body>
 </html>
