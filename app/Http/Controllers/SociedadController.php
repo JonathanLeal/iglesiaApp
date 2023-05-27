@@ -11,8 +11,8 @@ class SociedadController extends Controller
 {
     public function listarSociedad(){
         $sociedades = Sociedad::all();
-        if (count($sociedades)) {
-            return response()->json(['mensaje' => 'No se encontro la sociedad de jovenes'], 404);
+        if (count($sociedades) == 0) {
+            return response()->json(['mensaje' => 'No hay sociedades'], 404);
         }
         return response()->json($sociedades);
     }
@@ -20,7 +20,7 @@ class SociedadController extends Controller
     public function obtenerSociedad(Request $request){
         $idSocJovenes = Sociedad::find($request->id);
         if (!$idSocJovenes) {
-            return response()->json(['mensaje' => 'No se encontro la sociedad de jovenes'], 404);
+            return response()->json(['mensaje' => 'No se encontro la sociedad'], 404);
         }
         return response()->json($idSocJovenes);
     }

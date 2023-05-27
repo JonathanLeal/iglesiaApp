@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/sociedades', function () {
     return view('Sociedades');
 });
-Route::get('sociedades/list', [SociedadController::class, 'listarSociedad'])->name('lista.sociedades');
+Route::get('sociedades/list', [SociedadController::class, 'listarSociedad']);
 Route::get('sociedades/list/{id}', [SociedadController::class, 'obtenerSociedad']);
 Route::post('sociedades/save', [SociedadController::class, 'guardarSociedad']);
 Route::put('sociedades/update/{id}', [SociedadController::class, 'editarSociedad']);
