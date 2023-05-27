@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SociedadController;
 use App\Http\Controllers\SocJovenesController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,12 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//sociedad jovenes
-Route::get('/socJovenes', function () {
-    return view('SociedadJovenes');
+//sociedades
+Route::get('/sociedades', function () {
+    return view('Sociedades');
 });
-Route::get('socJovenes/list', [SocJovenesController::class, 'listarSocJovenes'])->name('lista.socJovenes');
-Route::get('socJovenes/list/{id}', [SocJovenesController::class, 'obtenerSocJovenes'])->name('obtener.socJovenes');
-Route::post('socJovenes/save', [SocJovenesController::class, 'guardarSocJovenes'])->name('guardar.socJovenes');
-Route::put('socJovenes/update/{id}', [SocJovenesController::class, 'editarSocJovenes'])->name('editar.socJovenes');
-Route::delete('socJovenes/delete/{id}', [SocJovenesController::class, 'eliminarSocJovenes'])->name('eliminar.socJovenes');
+Route::get('sociedades/list', [SociedadController::class, 'listarSociedad'])->name('lista.sociedades');
+Route::get('sociedades/list/{id}', [SociedadController::class, 'obtenerSociedad']);
+Route::post('sociedades/save', [SociedadController::class, 'guardarSociedad']);
+Route::put('sociedades/update/{id}', [SociedadController::class, 'editarSociedad']);
+Route::delete('sociedades/delete/{id}', [SociedadController::class, 'eliminarSociedad']);
