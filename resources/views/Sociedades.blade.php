@@ -52,7 +52,35 @@
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h3>Lista de sociedades</h3>
-  
+            <!-- BUTON para abri modal de sociedades -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sociedadesModal">
+              Nueva sociedad
+            </button>
+            <!-- BUTON para abri modal de sociedades -->
+
+            <!-- Modal INCIO SOCIEDADES-->
+          <div class="modal fade" id="sociedadesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion de sociedad</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                      <label for="nombre_sociedades">Nombre:</label>
+                      <input type="text" class="form-control" id="nombre_sociedades" placeholder="Nombre de la sociedad">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnGuardar">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal FIN SOCIEDADES-->
+
             <table id="tabla-sociedades" class="table table-hover">
               <thead>
                 <tr>

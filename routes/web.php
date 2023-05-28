@@ -27,4 +27,4 @@ Route::get('sociedades/list', [SociedadController::class, 'listarSociedad']);
 Route::get('sociedades/list/{id}', [SociedadController::class, 'obtenerSociedad']);
 Route::post('sociedades/save', [SociedadController::class, 'guardarSociedad']);
 Route::put('sociedades/update/{id}', [SociedadController::class, 'editarSociedad']);
-Route::delete('sociedades/delete/{id}', [SociedadController::class, 'eliminarSociedad']);
+Route::delete('sociedades/delete/{id}', [SociedadController::class, 'eliminarSociedad'])->name('eliminar.sociedad');
