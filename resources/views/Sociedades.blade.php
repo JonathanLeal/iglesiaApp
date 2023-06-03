@@ -21,25 +21,17 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/sociedades">Sociedades</a>
               </li>
-              <li class="nav-item dropdown">
-                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Privilegios
-                </button>
-                <ul class="dropdown-menu dropdown-menu-primary">
-                  <li><a class="dropdown-item" href="">Jovenes</a></li>
-                  <li><a class="dropdown-item" href="SocSenioras">Señoras</a></li>
-                  <li><a class="dropdown-item" href="socSeniores">Señores</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/privilegios">Privilegios</a>
               </li>
-              <li class="nav-item dropdown">
-                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Miembros
-                </button>
-                <ul class="dropdown-menu dropdown-menu-primary">
-                  <li><a class="dropdown-item" href="SocJovenes">Jovenes</a></li>
-                  <li><a class="dropdown-item" href="SocSenioras">Señoras</a></li>
-                  <li><a class="dropdown-item" href="socSeniores">Señores</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/miembros">Miembros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/escuela">Escuela</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/session">Session</a>
               </li>
             </ul>
           </div>

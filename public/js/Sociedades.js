@@ -15,7 +15,7 @@ function cargarTabla() {
               '<td>' + sociedad.id + '</td>' +
               '<td>' + sociedad.nombre_sociedades + '</td>' +
               '<td>' + 
-                "<button type='button' class='btn btn-info' data-bs-toggle='modal' data-bs-target='#sociedadesModal'>Editar</button>" +
+                "<button type='button' id='btnSeleccionar' class='btn btn-info' data-bs-toggle='modal' data-bs-target='#sociedadesModal'>Editar</button>" +
                 "<button type='button' value="+sociedad.id+" class='btn btn-danger' id='btnEliminar'>Eliminar</button>" +
               '</td>' +
               '</tr>';
@@ -64,8 +64,20 @@ $("#btnGuardar").on("click", function() {
     })
 });
 
-//eliminar
-$("#document").on("click","btnEliminar", function(){
-  var id = $(this).val;
-  $("#btnEliminar").val(id);
+//obtener una sociedad en el modal
+$("#btnSeleccionar").on("click", function() {
+  event.preventDefault();
+  console.log('entrando');
+    var id = $(this).val();
+    $.ajax({
+      url: "http://127.0.0.1:8000/sociedades/list/"+id,
+      type: "GET",
+      dataType: "JSON",
+      success: function(response) {
+        console.log(response);
+      },
+      error: function(xhr, status, error) {
+        console.log(error)
+      }
+    });
 });

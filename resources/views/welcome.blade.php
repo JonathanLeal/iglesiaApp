@@ -10,41 +10,35 @@
 </head>
 <body>
 
+    <!--INICIO DE NAV-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">INICIO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/sociedades">Sociedades</a>
-              </li>
-              <li class="nav-item dropdown">
-                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Privilegios
-                </button>
-                <ul class="dropdown-menu dropdown-menu-primary">
-                  <li><a class="dropdown-item" href="">Jovenes</a></li>
-                  <li><a class="dropdown-item" href="SocSenioras">Señoras</a></li>
-                  <li><a class="dropdown-item" href="socSeniores">Señores</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Miembros
-                </button>
-                <ul class="dropdown-menu dropdown-menu-primary">
-                  <li><a class="dropdown-item" href="SocJovenes">Jovenes</a></li>
-                  <li><a class="dropdown-item" href="SocSenioras">Señoras</a></li>
-                  <li><a class="dropdown-item" href="socSeniores">Señores</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">INICIO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/sociedades">Sociedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/privilegios">Privilegios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/miembros">Miembros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/escuela">Escuela</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/session">Session</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+<!--FIN DE NAV-->
 
     <div class="container mt-3">
         <div class="card">
