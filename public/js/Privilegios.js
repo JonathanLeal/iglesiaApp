@@ -106,15 +106,21 @@ function seleccionar(id) {
     })
 }
 
+$("#btnCancelar").on("click", function() {
+    $("#nombre_privilegio").val("");
+    console.log("click en cancelar");
+    $("#btnGuardar").show();
+    $("#btnEditar").hide();
+})
+
 $('#btnEditar').on('click', function() {
     var nombre_privilegio = $('#nombre_privilegio').val();
-    var id = 
     $.ajax({
         url: "http://127.0.0.1:8000/privilegio/update/"+id,
         type: 'PUT',
         dataType: 'json',
         data: {
-            nombre: nombre_privilegio
+            nombre_privilegio: nombre_privilegio
         },
         success: function(response) {
             console.log(response);
