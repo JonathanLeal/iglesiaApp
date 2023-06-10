@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MiembroController;
 use App\Http\Controllers\PrivilegioController;
 use App\Http\Controllers\SociedadController;
 use App\Http\Controllers\SocJovenesController;
@@ -44,3 +45,5 @@ Route::delete('privilegio/delete/{id}', [PrivilegioController::class, 'eliminarP
 Route::get('/miembros', function () {
     return view('Miembros');
 });
+Route::get('miembros/listSoc', [MiembroController::class, 'obtenerSociedades']);
+Route::get('miembros/list', [MiembroController::class, 'obtenerMiembros']);

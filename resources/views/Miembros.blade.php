@@ -50,12 +50,25 @@
             </button>
             <!-- BUTON para abri modal de sociedades -->
 
+            <table id="tablaMiembros" class="table table-hover">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Sociedad</th>
+                  <th>Privilegio</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+
             <!-- Modal INCIO SOCIEDADES-->
           <div class="modal fade" id="miembrosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion de sociedad</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del miembro</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -67,6 +80,14 @@
                       <label for="nombre_sociedades">Apellido:</label>
                       <input type="text" class="form-control" id="nombre_sociedades" placeholder="Apellido del miembro">
                     </div>
+                    <div class="form-group">
+                      <label for="selIdSoc">Sociedad:</label>
+                      <select name="selIdSoc" id="selIdSoc"></select>
+                    </div>
+                    <div class="form-group">
+                      <label for="selIdPri">Privilegio:</label>
+                      <select name="selIdPri" id="selIdPri"></select>
+                    </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -77,11 +98,9 @@
           </div>
           <!-- Modal FIN SOCIEDADES-->
 
-            
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.0/dist/sweetalert2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="{{asset('js/Sociedades.js')}}"></script>
+    <script src="{{asset('js/Miembros.js')}}"></script>
 </body>
 </html>

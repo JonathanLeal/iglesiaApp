@@ -47,7 +47,7 @@
         <h3>Lista de privilegios</h3>
         <!-- BUTON para abri modal de sociedades -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#privilegiosModal">
-          Nueva sociedad
+          Nuevo privilegio
         </button>
         <!-- BUTON para abri modal de sociedades -->
 
